@@ -1,25 +1,41 @@
 * {
   box-sizing: border-box;
 }
-.section {
-  padding: 1rem;
-  border: 1px solid;
+
+body {
+  background-color: oklch(5% 0 0);
 }
+
 .section {
-  background-color: aqua;
-  padding: 1rem;
-  border: 0.0625rem solid#000;
+  margin-top: 2rem;
+  color: oklch(100% 0 0);
 }
+.section:first-child {
+  margin-top: 0;
+}
+.section h2 {
+  text-align: center;
+}
+
 .container {
-  background-color: bisque;
-  max-width: 50rem;
+  max-width: 80rem;
+  padding: 2.5rem;
   margin-inline: auto;
-  padding: 1rem;
+  background-color: oklch(20% 0 0);
 }
-children {
-  border: 1px solid#f00;
-  padding: 1rem;
+
+.card {
+  background-color: oklch(40% 0 0);
 }
-.flex {
+.card__title {
+  font-weight: 700;
+  color: oklch(90% 0 0);
+}
+.card__content {
+  margin-top: 0.25rem;
+  color: oklch(70% 0 0);
+}
+
+.flex-container {
   display: flex;
 }
