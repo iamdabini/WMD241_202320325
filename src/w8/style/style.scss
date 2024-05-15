@@ -10,7 +10,7 @@ body {
 }
 
 .navigation {
-  background-color: black;
+  background-color: #000;
   color: #fff;
   padding-inline: 1.875rem;
   padding-block: 1.1875rem;
@@ -24,18 +24,18 @@ body {
     display: flex;
     align-items: center;
     &--left {
-      gap: 0.0125rem;
+      gap: 0.8125rem;
     }
   }
   &__page-title {
-    margin-top: 0.1875rem;
-    padding-left: 0.125rem;
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-left: 0.8125rem;
     line-height: 1.4375rem;
-    border-left: 0.125rem;
-    solid: #fff;
+    border-left: 0.125rem solid #fff;
   }
-  &navigation__page-title &__logo {
-    height: 2rem;
+  &__logo {
+    height: 32px;
     aspect-ratio: 200 / 51;
   }
 }
