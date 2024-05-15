@@ -10,6 +10,7 @@ body {
 }
 
 .navigation {
+  font-size: 1.5rem;
   background-color: #000;
   color: #fff;
   padding-inline: 1.875rem;
@@ -27,15 +28,37 @@ body {
       gap: 0.8125rem;
     }
   }
-  &__page-title {
-    margin-top: 3px;
-    padding-top: 3px;
-    padding-left: 0.8125rem;
-    line-height: 1.4375rem;
-    border-left: 0.125rem solid #fff;
+}
+&__logo {
+  height: 32px;
+  aspect-ratio: 200 / 51;
+}
+&__page-title {
+  margin-top: 3px;
+  padding-top: 3px;
+  padding-left: 0.8125rem;
+  line-height: 1.4375rem;
+  border-left: 0.125rem solid #fff;
+}
+&__btn {
+  padding-inline: 1.4375rem;
+  padding-block: 0.4375rem;
+  line-height: 2.25rem;
+  border-radius: 0.5rem;
+  &--outline {
+    border: 0.0625rem solid#fff;
+    background-color: #191a1b;
   }
-  &__logo {
-    height: 32px;
-    aspect-ratio: 200 / 51;
+  &--fill {
+  }
+}
+
+@media (width < 50rem) {
+  .container {
+    &__menu-group {
+      &--right {
+        display: none;
+      }
+    }
   }
 }
